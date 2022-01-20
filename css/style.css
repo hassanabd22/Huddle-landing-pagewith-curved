@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pank-color: hsl(322, 100%, 66%);
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+button {
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid var(--pank-color);
+}
+
+button a{
+    text-decoration: none;
+    color:var(--Very-Dark-Cyan);
+    transition: 0.3s;
+}
+
+.desktop {
+    display: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vh 5vw;
+    width: 100%;
+    z-index: 5;
+    
+}
+
+header button {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px  hsl(0, 0%, 84%);
+    width: 100px;
+    height:25px;
+}
+
+header img {
+    width: 125px;
+}
+
+.Hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+}
+.Hero img {
+    width: 90vw;
+    margin-top: 50px;
+}
+
+.Hero .text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Hero .text h1 {
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 24px;
+    width: 90vw;
+    
+}
+
+h1 , h2 , h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.Hero .text p {
+    margin-bottom: 25px;
+    line-height: 1.6;
+    text-align: center;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Hero .text button {
+    background-color:var(--pank-color);
+    color:var(--Very-Pale-Cyan);
+    width: 225px;
+    height: 40px;
+    
+}
+
+.Hero .text button a {
+    color:var(--Very-Pale-Cyan);
+}
+
+.contaner {
+  width: 90vw;
+  text-align: center;
+}
+
+.num img {
+    width: 25px;
+}
+
+.num-contane h2 {
+    font-size: 62px;
+}
+
+.num-contane p {
+    color: var(--Grayish-Blue);
+}
+
+
+@media (min-width: 767px) {
+    .Hero {
+        display: flex;
+        justify-content: space-between;
+        padding: 10vh 5vw;
+    }
+    .Hero img {
+        flex-basis: 50%;
+        width: 50%;
+    }
+
+    .num {
+        display: flex;
+        justify-content: space-between;
+        width: 40vw;
+    }
+
+    .num img {
+        width: 30px;
+    }
+
+    .num h2 {
+        font-size: 46px;
+    }
+
+    .num-contane {
+        
+    }
+
+    .Hero .text {
+        flex-basis: 40%;
+        margin-top: 20vh;
+        text-align: left;
+    }
+    .mobile{ 
+        display: none;
+    }
+    .desktop {
+        display: block;
+        width: 100vw;
+    }
+}
+
+.mobile{ 
+    width: 100vw;
+    margin-top: -5px;
+}
+
+.boxes {
+    position: relative;
+    
+}
+
+.boxes .box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100vw;
+    height: 100%;
+}
+
+.boxes .box-1 {
+   background-color: hsl(207, 100%, 98%);
+   margin-top: -5px;
+}
+
+.boxes .box-2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 70vh;
+ }
+
+ .boxes .box-3 {
+    background-color: hsl(207, 100%, 98%);
+    margin-top: -5px;
+ }
+ 
+ .bottom {
+     margin-top: -50px;
+ }
+
+.boxes .box img{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.boxes .box .text {
+    order: 2;
+    margin-bottom: 40px;
+    padding: 10px 10vw;
+}
+.boxes .box .text h2 {
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.boxes .box .text p {
+    line-height: 1.6;
+}
+
+.boxes .last {
+    min-height: 20vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxes .last h2 {
+    margin-top: 30px;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.boxes .last button {
+    background-color:var(--pank-color);
+    color:var(--Very-Pale-Cyan);
+    width: 225px;
+    height: 50px;
+}
+    
+.boxes .last   a {
+    color:var(--Very-Pale-Cyan);
+}
+
+@media (min-width: 767px) {
+    .boxes .box {
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+        padding: 5vh;
+    }
+    .boxes .box img{
+        flex-basis: 40%;
+        width: 40%;
+        order: 2;
+    }
+
+    .boxes .box .text{
+        flex-basis: 60%;
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 5vw 0 4vw;
+    }
+
+    .boxes .box .text h2{
+        align-self: start;
+    }
+
+    .boxes .box-2 img{
+        order: 1;
+    }
+    .boxes .box-abs {
+        width: 40%;
+        margin-left: 25vw;
+        height: 25vh;
+    }
+}
+
+.footer {
+    color:var(--Very-Pale-Cyan);
+    padding: 20vh 5vh 2vh;
+    display: flex;
+    flex-direction: column;
+    background-color:var(--Very-Dark-Cyan)
+}
+
+
+
+.footer-img {
+    margin-bottom:-10px;
+    width: 100vw;
+}
+.footer svg {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.footer .hud div {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.footer .hud div span {
+    margin-left: 20px;
+    display: inline-block;
+    line-height: 1.6;
+}
+
+.footer .links {
+    margin-bottom: 50px;
+}
+
+.footer .links li {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.footer .links li a {
+    color: var(--Very-Pale-Cyan);
+    text-decoration: none;
+    
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.hud {
+    order: 2;
+}
+
+.two {
+    margin-top: -100px;
+    padding-bottom: 50px;
+}
+
+.two h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.two p {
+    margin-bottom: 20px;
+}
+
+.two input {
+    padding: 10px 60px;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.two button {
+    padding: 10px 60px;
+    border-radius: 5px;
+    background-color:var(--pank-color);
+    color: white;
+    margin-left: 110px;
+}
+
+.two a {
+    color: white;
+}
+
+
+@media (min-width: 767px) {
+    .footer {   
+        flex-direction: column;
+        align-items: center;
+    }
+    .flex {
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+    .hud  {
+        flex-basis: 40%;
+        order: 1;
+    }
+
+    .two {
+        order: 2;
+        margin-top: 0;
+        flex-basis: 30%;
+    }
+
+    input {
+        display: inline-block;
+        padding: 10px 40px;
+    }
+
+    .two button {
+        padding: 10px 10px;
+        border-radius: 5px;
+        background-color:var(--pank-color);
+        color: white;
+        margin-left: 0;
+    }
+
+    .links {
+        display: flex;
+        align-self: center;
+        width: 40%;
+    }
+    .link {
+        margin-right: 50px;
+    }
+
+    
+}
